@@ -1,0 +1,12 @@
+  const pillars = [
+    { title: "Money Mindset", desc: "Transform how you think about wealth.", icon: <Brain size={18} /> },
+    { title: "Income & Cash Flow", desc: "Maximize earnings. Keep\u00a0more.", icon: <TrendingUp size={18} /> },
+    { title: "Debt Strategy", desc: "Good debt vs bad debt \u2014 eliminate what\u00a0hurts.", icon: <Zap size={18} /> },
+    { title: "Taxes", desc: "Tax efficiency that keeps your money\u00a0working.", icon: <FileText size={18} /> },
+    { title: "Insurance", desc: "Protect your family and\u00a0assets.", icon: <ShieldCheck size={18} /> },
+    { title: "College Planning", desc: "Fund education without destroying\u00a0retirement.", icon: <School size={18} /> },
+    { title: "Retirement", desc: "Income that lasts \u2014 not just a\u00a0number.", icon: <PieChart size={18} /> },
+    { title: "Legacy", desc: "Pass on a blueprint, not just\u00a0money.", icon: <Scroll size={18} /> },
+    { title: "Life Insurance as Banking", desc: "Your own personal banking\u00a0system.", icon: <Building2 size={18} /> },
+    { title: "Legacy/Estate Planning", desc: "Protect and transfer your wealth for\u00a0generations.", icon: <Users size={18} /> },
+  ];
