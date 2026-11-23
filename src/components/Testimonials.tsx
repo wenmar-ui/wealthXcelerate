@@ -1,6 +1,5 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import AnimatedCounter from './AnimatedCounter';
 
 const Testimonials: React.FC = () => {
   return (
@@ -162,28 +161,6 @@ const Testimonials: React.FC = () => {
                     <p style={{ fontSize: '1rem', color: 'hsl(var(--muted-foreground))', margin: 0, lineHeight: 1.5 }}>{item.desc}</p>
                   </div>
                 ))}
-              </div>
-            </motion.div>
-
-            {/* Large Graphical Stats */}
-            <motion.div 
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.8, delay: 0.4 }}
-              style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '2rem' }}
-            >
-              <div style={{ borderLeft: '1px solid rgba(255,255,255,0.1)', paddingLeft: '1.5rem' }}>
-                <p style={{ fontSize: '3rem', fontWeight: 400, color: '#fff', lineHeight: 1, margin: '0 0 0.5rem 0', letterSpacing: '-0.02em', fontFamily: '"Casanova Serif Display", serif' }}>
-                  <AnimatedCounter to={2} prefix="$" suffix="B+" duration={2} />
-                </p>
-                <p style={{ fontSize: '0.75rem', textTransform: 'uppercase', letterSpacing: '0.1em', color: '#64af03', margin: 0, fontWeight: 700 }}>Assets Managed</p>
-              </div>
-              <div style={{ borderLeft: '1px solid rgba(255,255,255,0.1)', paddingLeft: '1.5rem' }}>
-                <p style={{ fontSize: '3rem', fontWeight: 400, color: '#fff', lineHeight: 1, margin: '0 0 0.5rem 0', letterSpacing: '-0.02em', fontFamily: '"Casanova Serif Display", serif' }}>
-                  <AnimatedCounter to={100} suffix="%" duration={2} />
-                </p>
-                <p style={{ fontSize: '0.75rem', textTransform: 'uppercase', letterSpacing: '0.1em', color: '#64af03', margin: 0, fontWeight: 700 }}>Fiduciary Standard</p>
               </div>
             </motion.div>
 

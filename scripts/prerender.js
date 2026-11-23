@@ -1,6 +1,6 @@
 import fs from 'node:fs';
 import path from 'node:path';
-import { fileURLToPath } from 'node:url';
+import { fileURLToPath, pathToFileURL } from 'node:url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const toAbs = (p) => path.resolve(__dirname, '..', p);
@@ -24,7 +24,7 @@ async function prerender() {
   const template = fs.readFileSync(toAbs('dist/index.html'), 'utf-8');
   
   // Import the server bundle built by Vite SSR
-  const { render } = await import(toAbs('dist/server/entry-server.js'));
+  const { render } = await import(pathToFileURL(toAbs('dist/server/entry-server.js')).href);
 
   for (const route of routes) {
     const helmetContext = {};
